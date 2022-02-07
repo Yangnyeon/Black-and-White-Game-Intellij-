@@ -20,7 +20,7 @@ public class minum {
 
 
 
-        for(int i = 1 ; i <= 9 ; i++) {
+        for(int i = 0 ; i <= 9 ; i++) {
             com.add(i);
             me.add(i);
         }
@@ -29,12 +29,12 @@ public class minum {
         System.out.println(me);
          int comturn = 0 ;
 
-        for(int q = 0 ; q <= 8 ; q++) {
+        for(int q = 0 ; q < 10 ; q++) {
             int meturn = in.nextInt();
             me.remove(new Integer(meturn));
 
             while (Exception.size() < 1 + q) {
-                comturn = random.nextInt(9)+1  ;
+                comturn = random.nextInt(10)  ;
                 if(!Exception.contains(comturn)) {
                     Exception.add(comturn);
                 }
@@ -47,12 +47,12 @@ public class minum {
                 comScore++ ;
             }
 
-            System.out.println(me);
+
             System.out.println("내가 입력한 숫자 : " + meturn);
-            //System.out.println("컴퓨터 새기가 입력한 숫자 : " + comturn);
+            //System.out.println("컴퓨터 가 입력한 숫자 : " + comturn);
             System.out.println("나의 점수 : " + meScore);
             System.out.println("컴퓨터 점수 : " + comScore);
-            //System.out.println(me);
+            System.out.println("내가 남은 숫자 : " + me);
             //System.out.println(com);
         }
 
