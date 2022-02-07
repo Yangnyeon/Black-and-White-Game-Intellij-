@@ -25,8 +25,8 @@ public class minum {
             me.add(i);
         }
 
-         System.out.println(com);
-         System.out.println(me);
+         //System.out.println(com);
+        System.out.println(me);
          int comturn = 0 ;
 
         for(int q = 0 ; q <= 8 ; q++) {
@@ -47,12 +47,13 @@ public class minum {
                 comScore++ ;
             }
 
+            System.out.println(me);
             System.out.println("내가 입력한 숫자 : " + meturn);
-            System.out.println("컴퓨터 새기가 입력한 숫자 : " + comturn);
+            //System.out.println("컴퓨터 새기가 입력한 숫자 : " + comturn);
             System.out.println("나의 점수 : " + meScore);
             System.out.println("컴퓨터 점수 : " + comScore);
-            System.out.println(me);
-            System.out.println(com);
+            //System.out.println(me);
+            //System.out.println(com);
         }
 
         System.out.println("끗");
